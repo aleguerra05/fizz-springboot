@@ -20,7 +20,10 @@ public class FizzbuzzApplication {
 			"Hello %s!, this is a simple FizzBuzz App"+
 			"<br> You can go to <a href=\'/api/fizzbuzz\'>/api/fizzbuzz</a> to get the full list"+
 			"<br> also you can ask for a number <a href=\'/api/fizzbuzz/15\'>/api/fizzbuzz/15</a>"+
-			"<br> or get a <a href=\'/api/fizzbuzz/random\'>random one</a>"
+			"<br> or get a <a href=\'/api/fizzbuzz/random\'>random one</a>"+
+			"<br> <br> <a href=\'mailto:aleguerra05@gmail.com\'>aleguerra05@gmail.com</a>"+
+			"<br> Code is Available at Github on"+
+			"<br> <a href=\'https://github.com/aleguerra05/fizz-springboot\'>aleguerra05/fizz-springboot</a>"
 			, name);
 	}
 }
