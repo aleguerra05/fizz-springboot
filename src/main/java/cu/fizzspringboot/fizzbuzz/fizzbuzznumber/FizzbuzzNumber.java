@@ -1,27 +1,27 @@
 package cu.fizzspringboot.fizzbuzz.fizzbuzznumber;
 
 public class FizzbuzzNumber{
-    private int number;
+    private int id;
     private String result;
 
     public FizzbuzzNumber(){
-        this.number = 1;
+        this.id = 1;
     }
 
-    public FizzbuzzNumber(int number){
-        this.number = number;
+    public FizzbuzzNumber(int id){
+        this.id = id;
     }
 
-    public int getNumber(){
-        return number;
+    public int getId(){
+        return id;
     }
 
     public String getResult(){
-        return CalcFizz(number);
+        return CalcFizz(id);
     }
 
-    public void setNumber(int number){
-        this.number = number;
+    public void setId(int id){
+        this.id = id;
     }
 
     private void setResult(String result){
@@ -44,7 +44,7 @@ public class FizzbuzzNumber{
     @Override
     public String toString(){
         return  "FizzbuzzNumber{"+
-                "number="+number+
+                "id="+id+
                 ", result='"+this.getResult()+'\''+
                 '}';
     } 
