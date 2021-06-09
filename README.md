@@ -1,6 +1,9 @@
 # FizzSpringBoot
 A simple restAPI to get FizzBuzz number equivalence
 
+## Play with the API
+The RestApi is available at https://first-me.herokuapp.com/
+and is used by https://fizz-angular.vercel.app/home
 ## Development server
 Run ```mvn spring-boot:run``` and navigate to http://localhost:8080/
 
