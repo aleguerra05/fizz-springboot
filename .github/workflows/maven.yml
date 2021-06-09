@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn -DskipTests -B package --file pom.xml
+      run: mvn -DskipTests package
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -34,4 +34,4 @@ jobs:
         draft: false
         prerelease: false
         files: |
-            *.jar
+            target/*.jar
