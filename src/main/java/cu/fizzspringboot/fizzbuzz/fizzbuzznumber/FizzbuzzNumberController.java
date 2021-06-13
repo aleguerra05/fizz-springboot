@@ -34,9 +34,11 @@ public class FizzbuzzNumberController{
     }
 
     @GetMapping
-    public List<FizzbuzzNumber> getAllFizzbuzzNumber (){
+    public List<FizzbuzzNumber> getAllFizzbuzzNumber (@RequestParam(value = "_page", defaultValue = "1") int page, @RequestParam(value = "_limit", defaultValue = "100") int limit ){
         List<FizzbuzzNumber> list = new ArrayList<FizzbuzzNumber>();
-        for(int i=1;i<=100;i++)
+        int min = page * limit - limit + 1;
+        int max = page * limit;
+        for(int i=min;i<=max;i++)
             list.add(new FizzbuzzNumber(i));
         return list;
     }
